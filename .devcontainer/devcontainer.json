@@ -1,5 +1,5 @@
 {
-    "name": "Continue.dev demo with T3",
+    "name": "Continue.dev ",
     "image": "ubuntu:22.04",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2.5.2": {
@@ -43,6 +43,5 @@
     },
     "workspaceFolder": "/workspaces/codeanywhere-nodejs/demo",
     "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
-    "onCreateCommand": "cd demo && bun install",
     "remoteUser": "continue"
 }
