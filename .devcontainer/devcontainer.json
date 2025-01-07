@@ -1,6 +1,6 @@
 {
     "name": "Continue.dev ",
-    "image": "ubuntu:22.04",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2.5.2": {
             "username": "continue",
@@ -37,7 +37,10 @@
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",
                 "ms-vscode.vscode-typescript-next",
-                "mhutchie.git-graph"
+                "mhutchie.git-graph",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter"
             ]
         }
     },
