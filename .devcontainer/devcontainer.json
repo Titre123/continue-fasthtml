@@ -10,6 +10,9 @@
         },
         "ghcr.io/devcontainers/features/git:1": {}
     },
+    "overrideFeatureInstallOrder": [
+        "ghcr.io/devcontainers/features/common-utils",
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
