@@ -1,5 +1,5 @@
 {
-    "name": "Python Development Container",
+    "name": "Continue.dev ",
     "image": "mcr.microsoft.com/devcontainers/python:3.11",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2.5.2": {
@@ -8,22 +8,31 @@
             "userGid": 1000,
             "configureZshAsDefaultShell": true
         },
-        "ghcr.io/devcontainers/features/git:1": {}
+        "ghcr.io/devcontainers/features/node:1": {
+            "nodeGypDependencies": true,
+            "version": "lts",
+            "nvmVersion": "0.40.0"
+        },
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/prulloac/devcontainer-features/bun:1": {}
     },
     "overrideFeatureInstallOrder": [
         "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/git",
+        "ghcr.io/devcontainers/features/node"
     ],
     "customizations": {
         "vscode": {
             "extensions": [
-                "continue.continue",
+                "mhutchie.git-graph",
                 "ms-python.python",
                 "ms-python.vscode-pylance",
-                "ms-toolsai.jupyter"
+                "ms-toolsai.jupyter",
+                "continue.continue"
             ]
         }
     },
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "workspaceFolder": "/workspaces/codeanywhere-nodejs/demo",
     "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
     "remoteUser": "continue"
 }
